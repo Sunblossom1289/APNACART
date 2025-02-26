@@ -1,12 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Customer from "./components/Customer";
 import Admin from "./components/Admin";
 import Orders from "./components/Orders";
+import "./App.css"; 
 import Billing from "./components/Billing"; // Import Billing Page
+/* Not usable depending on structure of routes
+import { useNavigate } from "react-router-dom";
+*/
 
 const App = () => {
   return (
